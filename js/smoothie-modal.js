@@ -18,7 +18,7 @@
       return modalItems;
     },
     getNumOfOpenModals: function () {
-      return parseInt($('.js-modal-window.open').length);
+      return parseInt($('.js-modal-window.smoothie-modal-open').length);
     },
     setModalIndex: function (modalWindow, modalOverlay) {
       var index = this.getNumOfOpenModals();
@@ -37,19 +37,19 @@
       if (!this.isAnyModalOpen()) {
         currentScrollTop = this.getScrollTop();
       }
-      modalWindow.addClass('open');
-      modalOverlay.addClass('open');
+      modalWindow.addClass('smoothie-modal-open');
+      modalOverlay.addClass('smoothie-modal-open');
       this.setModalIndex(modalWindow, modalOverlay);
-      this.$modalWrapper.addClass('fixed');
+      this.$modalWrapper.addClass('smoothie-modal-fixed');
       this.wrapperTop = this.$modalWrapper.css('top');
       this.$modalWrapper.css('top', -currentScrollTop);
       this.$mainContainer.scrollTop(0);
     },
     close: function (modalWindow, modalOverlay) {
-      modalWindow.removeClass('open');
-      modalOverlay.removeClass('open');
+      modalWindow.removeClass('smoothie-modal-open');
+      modalOverlay.removeClass('smoothie-modal-open');
       if (!this.isAnyModalOpen()) {
-        this.$modalWrapper.removeClass('fixed');
+        this.$modalWrapper.removeClass('smoothie-modal-fixed');
         this.$modalWrapper.css('top', this.wrapperTop);
         this.$mainContainer.scrollTop(currentScrollTop);
       }

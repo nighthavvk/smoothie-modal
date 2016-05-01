@@ -95,21 +95,66 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
+.section-1,
+.section-2,
+.section-3,
+.section-4 {
+  padding-bottom: 50vh;
+  padding-top: 50vh;
+  text-align: center;
+}
 
+.section-1 {
+  background-color: #add591;
+}
 
+.section-1 .section-btn:focus,
+.section-1 .section-btn:hover {
+  color: #add591;
+}
 
+.section-2 {
+  background-color: #ec4f48;
+}
 
+.section-2 .section-btn:focus,
+.section-2 .section-btn:hover {
+  color: #ec4f48;
+}
 
+.section-3 {
+  background-color: #70d6df;
+}
 
+.section-3 .section-btn:focus,
+.section-3 .section-btn:hover {
+  color: #70d6df;
+}
 
+.section-4 {
+  background-color: #fdb237;
+}
 
+.section-4 .section-btn:focus,
+.section-4 .section-btn:hover {
+  color: #fdb237;
+}
 
+.section-btn {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  color: #fff;
+  padding: 5px 15px;
+  -webkit-transition: all .2s linear;
+  transition: all 0.2s linear;
+}
 
-
-
-
-
-
+.section-btn:focus,
+.section-btn:hover {
+  background-color: #fff;
+  outline: none;
+}
 
 /* ==========================================================================
    Helper classes
