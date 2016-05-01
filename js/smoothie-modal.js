@@ -1,8 +1,8 @@
 (function($){
   var smoothieModal = {
     currentScrollTop: 0,
+    wrapperTop: 0,
     $modalWrapper: $('.js-modal-wrapper'),
-    wrapperTop: $('.js-modal-wrapper').css('top'),
     $mainContainer: $(window),
     $openTrigger: $('.js-modal-open'),
     $closeTrigger: $('.js-modal-close'),
@@ -33,15 +33,22 @@
         return true;
       }
     },
+    isModalOutOfBounds: function (modalWindow) {
+      if (modalWindow.outerHeight() > this.$mainContainer.outerHeight()) {
+        return true;
+      } else {
+        return false;
+      }
+    },
     open: function (modalWindow, modalOverlay) {
       if (!this.isAnyModalOpen()) {
         currentScrollTop = this.getScrollTop();
+        wrapperTop = $('.js-modal-wrapper').css('top');
       }
       modalWindow.addClass('smoothie-modal-open');
       modalOverlay.addClass('smoothie-modal-open');
       this.setModalIndex(modalWindow, modalOverlay);
       this.$modalWrapper.addClass('smoothie-modal-fixed');
-      this.wrapperTop = this.$modalWrapper.css('top');
       this.$modalWrapper.css('top', -currentScrollTop);
       this.$mainContainer.scrollTop(0);
     },
@@ -50,7 +57,7 @@
       modalOverlay.removeClass('smoothie-modal-open');
       if (!this.isAnyModalOpen()) {
         this.$modalWrapper.removeClass('smoothie-modal-fixed');
-        this.$modalWrapper.css('top', this.wrapperTop);
+        this.$modalWrapper.css('top', wrapperTop);
         this.$mainContainer.scrollTop(currentScrollTop);
       }
     }
