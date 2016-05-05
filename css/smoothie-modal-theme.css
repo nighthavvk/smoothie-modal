@@ -1,0 +1,41 @@
+.smoothie-modal {
+  border-radius: 3px;
+  color: #333;
+}
+
+.smoothie-modal-header {
+  border-bottom: 1px solid #c1c1c1;
+  box-shadow: 0 0 2px 1px #ccc;
+  padding: 15px;
+}
+
+.smoothie-modal-headline {
+  font-size: 24px;
+  margin: 0;
+}
+
+.smoothie-modal-content {
+  padding: 15px;
+}
+
+.smoothie-modal-footer {
+  border-top: 1px solid #c1c1c1;
+  box-shadow: 0 0 2px 1px #ccc;
+  padding: 15px;
+  text-align: right;
+}
+
+.smoothie-modal-btn {
+  background-color: #fff;
+  border: 1px solid #c1c1c1;
+  border-radius: 3px;
+  padding: 5px 15px;
+  -webkit-transition: all .4s linear;
+  transition: all .4s linear;
+}
+
+.smoothie-modal-btn:focus,
+.smoothie-modal-btn:hover {
+  border-color: #777;
+  outline: none;
+}
