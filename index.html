@@ -4,34 +4,231 @@
       <meta charset="utf-8">
       <meta http-equiv="x-ua-compatible" content="ie=edge">
       <title>Smoothie Modal</title>
-      <meta name="description" content="">
+      <meta name="description" content="smoothie modal">
       <meta name="viewport" content="width=device-width, initial-scale=1">
 
-      <link rel="apple-touch-icon" href="apple-touch-icon.png">
+      <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+      <link rel="icon" type="image/png" sizes="96x96" href="favicon-96x96.png">
+      <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-      <link rel="stylesheet" href="css/defaults/normalize.css">
+      <link href='https://fonts.googleapis.com/css?family=Cabin:400,700' rel='stylesheet' type='text/css'>
+      <link href='https://fonts.googleapis.com/css?family=PT+Mono' rel='stylesheet' type='text/css'>
+
+      <link rel="stylesheet" href="css/vendor/normalize.css">
       <link rel="stylesheet" href="css/defaults/main.css">
       <link rel="stylesheet" href="css/smoothie-modal-theme.css">
       <link rel="stylesheet" href="css/smoothie-modal.css">
-      <script src="js/vendor/modernizr-2.8.3.min.js"></script>
   </head>
   <body>
     <div class="smoothie-modal-wrapper js-modal-wrapper">
+
       <!--[if lt IE 8]>
           <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <section class="section-1">
-        <button class="section-btn js-modal-open" data-modal="default">Smoothie Modal Default</button>
+      <header class="header">
+        <div class="header-inner clearfix">
+          <div class="header-logo">
+
+          </div>
+          <div class="header-menu">
+            <ul class="nav">
+              <li class="nav-item"><a href="#demos" class="nav-link">Demos</a></li>
+              <li class="nav-item"><a href="#get-started" class="nav-link">Get started</a></li>
+              <li class="nav-item"><a href="#" class="nav-link">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <section class="section">
+        <a href="#" class="section-anchor" id="demos"></a>
+        <div class="section-inner">
+          <div class="section-content">
+            <h2 class="section-headline">Smoothie Modal Default</h2>
+            <button class="section-btn js-modal-open" data-modal="default">Demo</button>
+<pre class="section-pre"><code class="section-code">&lt;div class=&quot;smoothie-modal js-modal-window&quot; data-modal=&quot;default&quot;&gt;
+  &lt;div class=&quot;smoothie-modal-inner&quot;&gt;
+    &lt;div class=&quot;smoothie-modal-header&quot;&gt;
+      &lt;h2 class=&quot;smoothie-modal-headline&quot;&gt;Smoothie Modal Header (Default)&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-content&quot;&gt;
+      &lt;p&gt;
+        Smoothie Modal Content (Default)
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-footer&quot;&gt;
+      &lt;button class=&quot;smoothie-modal-btn js-modal-close&quot; data-modal=&quot;default&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;smoothie-modal-overlay js-modal-overlay js-modal-close&quot; data-modal=&quot;default&quot;&gt;&lt;/div&gt;
+</pre></code>
+          </div>
+        </div>
       </section>
-      <section class="section-2">
-        <button class="section-btn js-modal-open" data-modal="centered">Smoothie Modal Сentered</button>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-content">
+            <h2 class="section-headline">Smoothie Modal Сentered</h2>
+            <button class="section-btn js-modal-open" data-modal="centered">Demo</button>
+<pre class="section-pre"><code class="section-code">&lt;div class=&quot;smoothie-modal smoothie-modal-center js-modal-window&quot; data-modal=&quot;centered&quot;&gt;
+  &lt;div class=&quot;smoothie-modal-inner&quot;&gt;
+    &lt;div class=&quot;smoothie-modal-header&quot;&gt;
+      &lt;h2 class=&quot;smoothie-modal-headline&quot;&gt;Smoothie Modal Header (&#1057;entered)&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-content&quot;&gt;
+      &lt;p&gt;
+        Smoothie Modal Content (&#1057;entered)
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-footer&quot;&gt;
+      &lt;button class=&quot;smoothie-modal-btn js-modal-close&quot; data-modal=&quot;centered&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;smoothie-modal-overlay js-modal-overlay js-modal-close&quot; data-modal=&quot;centered&quot;&gt;&lt;/div&gt;
+</pre></code>
+          </div>
+        </div>
       </section>
-      <section class="section-3">
-        <button class="section-btn js-modal-open" data-modal="withscroll">Smoothie Modal With Scroll</button>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-content">
+            <h2 class="section-headline">Smoothie Modal With Scroll</h2>
+            <button class="section-btn js-modal-open" data-modal="withscroll">Demo</button>
+<pre class="section-pre"><code class="section-code">&lt;div class=&quot;smoothie-modal js-modal-window&quot; data-modal=&quot;withscroll&quot;&gt;
+  &lt;div class=&quot;smoothie-modal-inner&quot;&gt;
+    &lt;div class=&quot;smoothie-modal-header&quot;&gt;
+    &lt;h2 class=&quot;smoothie-modal-headline&quot;&gt;Smoothie Modal Header (With Scroll)&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-content&quot;&gt;
+      &lt;p&gt;
+        Smoothie Modal Content (With Scroll)
+      &lt;/p&gt;
+      &lt;p&gt;
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        Nam sit amet nisl faucibus, ultricies nisl id, venenatis nunc.
+        Sed mollis tincidunt hendrerit. Aliquam metus leo, dapibus vel
+        congue sed, posuere sit amet lorem. Integer a justo tristique
+        ipsum pharetra scelerisque. Pellentesque habitant morbi tristique
+        senectus et netus et malesuada fames ac turpis egestas. Phasellus
+        euismod odio eget sem tincidunt eleifend. Integer semper, risus
+        ut imperdiet finibus, nisl neque fermentum libero, sit amet
+        bibendum tortor ex sed metus.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Vestibulum ante ipsum primis in faucibus orci luctus
+        et ultrices posuere cubilia Curae; Integer quis ex in
+        metus dictum sagittis vel eu leo. Suspendisse sit amet
+        metus lectus. Donec vestibulum quis massa pulvinar feugiat.
+        Cras tempus erat quis libero laoreet consequat. Duis sagittis
+        ultricies odio, ut iaculis massa varius eget. Integer
+        consectetur vestibulum quam id porttitor. Suspendisse
+        euismod sed nisi sit amet rutrum. Sed sit amet tellus varius,
+        cursus risus at, euismod lacus. Nam tincidunt odio nec laoreet
+        volutpat. Nam orci odio, laoreet ac felis laoreet, accumsan
+        tristique velit. Sed eu mauris fermentum, pharetra risus eget,
+        viverra orci. In eget accumsan dolor. Donec nec mollis arcu.
+        In hac habitasse platea dictumst. Proin blandit rhoncus massa
+        blandit luctus.
+      &lt;/p&gt;
+      &lt;p&gt;
+        Morbi sodales suscipit dui, hendrerit commodo eros porttitor
+        sit amet. Aliquam ornare quam quam, in pulvinar quam molestie
+        quis. Aenean malesuada, metus at tincidunt rutrum, ex orci
+        dignissim arcu, in vehicula elit felis sit amet tortor. Nunc
+        ut arcu dolor. Etiam rutrum tortor justo, id suscipit ante
+        tempus quis. Proin accumsan ex in risus varius euismod vel in
+        ligula. Morbi varius dictum sodales. Cras in nulla a urna
+        ultricies efficitur vel ac augue. Nunc viverra tortor quis
+        tellus accumsan finibus. Duis eu elit ac mauris facilisis
+        tincidunt. Donec ac vehicula nunc, convallis tempor lacus.
+        Cras consectetur, elit ac interdum vulputate, tortor felis
+        tempus sapien, sit amet iaculis nibh purus nec lectus. Nullam
+        at nunc nec risus eleifend consequat.
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-footer&quot;&gt;
+      &lt;button class=&quot;smoothie-modal-btn js-modal-close&quot; data-modal=&quot;withscroll&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;smoothie-modal-overlay js-modal-overlay js-modal-close&quot; data-modal=&quot;withscroll&quot;&gt;&lt;/div&gt;
+</pre></code>
+          </div>
+        </div>
       </section>
-      <section class="section-4">
-        <button class="section-btn js-modal-open" data-modal="multiple">Smoothie Modal "Multiple"</button>
+      <section class="section">
+        <div class="section-inner">
+          <div class="section-content">
+            <h2 class="section-headline">Smoothie Modal "Multiple"</h2>
+            <button class="section-btn js-modal-open" data-modal="multiple">Demo</button>
+<pre class="section-pre"><code class="section-code">&lt;div class=&quot;smoothie-modal js-modal-window&quot; data-modal=&quot;multiple&quot;&gt;
+  &lt;div class=&quot;smoothie-modal-inner&quot;&gt;
+    &lt;div class=&quot;smoothie-modal-header&quot;&gt;
+      &lt;h2 class=&quot;smoothie-modal-headline&quot;&gt;Smoothie Modal Header (Multiple)&lt;/h2&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-content&quot;&gt;
+      &lt;p&gt;
+        Smoothie Modal Content (Multiple)
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;button class=&quot;smoothie-modal-btn js-modal-open&quot; data-modal=&quot;default&quot;&gt;Smoothie Modal Default&lt;/button&gt;
+      &lt;p&gt;
+        &lt;button class=&quot;smoothie-modal-btn js-modal-open&quot; data-modal=&quot;centered&quot;&gt;Smoothie Modal &#1057;entered&lt;/button&gt;
+      &lt;/p&gt;
+      &lt;p&gt;
+        &lt;button class=&quot;smoothie-modal-btn js-modal-open&quot; data-modal=&quot;withscroll&quot;&gt;Smoothie Modal With Scroll&lt;/button&gt;
+      &lt;/p&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;smoothie-modal-footer&quot;&gt;
+      &lt;button class=&quot;smoothie-modal-btn js-modal-close&quot; data-modal=&quot;multiple&quot;&gt;Close&lt;/button&gt;
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;smoothie-modal-overlay js-modal-overlay js-modal-close&quot; data-modal=&quot;multiple&quot;&gt;&lt;/div&gt;
+</pre></code>
+          </div>
+        </div>
+      </section>
+      <section class="section">
+        <a href="#" class="section-anchor" id="get-started"></a>
+        <div class="section-inner">
+          <div class="section-content">
+            <h2 class="section-headline">Get started</h2>
+            <p class="section-text">
+              Add CSS and JS files to your document (don't forget about jQuery)
+            </p>
+<pre class="section-pre"><code class="section-code">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/smoothie-modal.css&quot;&gt;
+
+&lt;script src=&quot;js/smoothie-modal.js&quot;&gt;&lt;/script&gt;
+</pre></code>
+<p class="section-text">
+  You can also use our default theme
+</p>
+<pre class="section-pre"><code class="section-code">&lt;link rel=&quot;stylesheet&quot; href=&quot;css/smoothie-modal-theme.css&quot;&gt;</pre></code>
+            <p class="section-text">
+              Wrap your content using js class helper - <code class="section-code inline">js-modal-wrapper</code>
+            </p>
+<pre class="section-pre"><code class="section-code">&lt;div class=&quot;js-modal-wrapper&quot;&gt;&lt;/div&gt;</pre></code>
+            <p class="section-text">
+              Follow next stucture to get basic functionality. Use data attribute <br> (data-modal) to manage your modal windows.
+            </p>
+            <p class="section-text">
+              Use class <code class="section-code inline">js-modal-open</code> for element to open modal window on click and <code class="section-code inline">js-modal-close</code> to close it.
+            </p>
+<pre class="section-pre"><code class="section-code">&lt;button class=&quot;js-modal-open&quot; data-modal=&quot;default&quot;&gt;Demo&lt;/button&gt;
+
+&lt;div class=&quot;smoothie-modal js-modal-window&quot; data-modal=&quot;default&quot;&gt;
+  Your content here...
+&lt;/div&gt;
+&lt;div class=&quot;smoothie-modal-overlay js-modal-overlay js-modal-close&quot; data-modal=&quot;default&quot;&gt;&lt;/div&gt;
+</pre></code>
+          </div>
+        </div>
       </section>
     </div>
 
@@ -155,6 +352,7 @@
 
     <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+    <script src="js/vendor/main.js"></script>
     <script src="js/smoothie-modal.js"></script>
   </body>
 </html>
